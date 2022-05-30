@@ -6,6 +6,7 @@ body {
     display: flex;
 }
 /* Shipping header below, teal */
+
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -20,11 +21,21 @@ body {
     color: white;
 }
 
+
+
+
 /* NAVBAR BELOW */
 /* sustainability etc below, collapses to hamburger, this is the styling for both. one disappears via visibility none */
 
+
+
+
 .navbar-brand {
     letter-spacing: .8em;
+}
+
+.header-2-landscape {
+    gap: 50px;
 }
 
 .header-2-hamburger, .header-2-landscape {
@@ -34,7 +45,6 @@ body {
     height: 30px;
     width: 100vw;
     background-color: #f1f1f1;
-    /* gap: 50px; */
 }
 
 .header-2-hamburger, .header-2-landscape, a {
@@ -44,19 +54,15 @@ body {
     font-size: .9em;
 }
 
-/* .form-wrapper {
-    gap: 50px;
-} */
+.header-2-hamburger {
+    position: fixed;
+    visibility: hidden;
+}
 
 .offcanvas-body {
     overflow: hidden;
 }
 
-/* below ensures hamburger stays invisible until media query makes it appear in side nav bar */
-.header-2-hamburger {
-    position: fixed;
-    visibility: hidden;
-}
 
 .hamburger-border {
     padding: 10px;
@@ -73,7 +79,11 @@ body {
     max-width: 10px;
 }
 
+
+
 /* Hero-banner styling below */
+
+
 
 .hero-image-cover {
     background-image: url(/images/shorts-main-banner.jpg);
@@ -97,11 +107,22 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Media queries below */
 
 @media (max-width: 992px){
     .header-2-landscape {
         visibility: hidden;
+        gap: 0px;
     }
 
     .header-2-hamburger {
@@ -141,11 +162,4 @@ body {
     .hero-text {
         font-size: .6em;
     }
-
-}
-
-
-img {
-    max-width: 100%;
-    display: block;
 }
