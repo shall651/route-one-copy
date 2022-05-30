@@ -86,7 +86,7 @@ body {
 
 
 .hero-image-cover {
-    background-image: url(/images/shorts-main-banner.jpeg);
+    background-image: url(./images/shorts-main-banner.jpg);
     height: 700px;
     background-size: cover;
     /* new below */
