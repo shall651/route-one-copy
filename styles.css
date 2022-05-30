@@ -1,3 +1,7 @@
+body {
+    overflow-y: hidden;
+}
+
 .container-fluid {
     display: flex;
 }
@@ -30,7 +34,7 @@
     height: 30px;
     width: 100vw;
     background-color: #f1f1f1;
-    gap: 50px;
+    /* gap: 50px; */
 }
 
 .header-2-hamburger, .header-2-landscape, a {
@@ -44,8 +48,13 @@
     gap: 50px;
 } */
 
-/* below ensures it stays invisible until media query makes it appear in side nav bar */
+.offcanvas-body {
+    overflow: hidden;
+}
+
+/* below ensures hamburger stays invisible until media query makes it appear in side nav bar */
 .header-2-hamburger {
+    position: fixed;
     visibility: hidden;
 }
 
@@ -104,6 +113,7 @@
         align-items: center;
         margin-top: 50%;
         visibility: visible;
+        position: relative;
         background-color: white;
     }
 
@@ -132,4 +142,10 @@
         font-size: .6em;
     }
 
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
 }
