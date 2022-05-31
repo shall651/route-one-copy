@@ -1,7 +1,3 @@
-body {
-    overflow-y: hidden;
-}
-
 .container-fluid {
     display: flex;
 }
@@ -21,17 +17,12 @@ body {
     color: white;
 }
 
-
-
-
 /* NAVBAR BELOW */
 /* sustainability etc below, collapses to hamburger, this is the styling for both. one disappears via visibility none */
 
-
-
-
 .navbar-brand {
     letter-spacing: .8em;
+    font-weight: 300;
 }
 
 .header-2-landscape {
@@ -105,19 +96,67 @@ body {
     margin-right: auto;
 }
 
+/* Discover menswear section below */
+
+.discover-menswear-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 150px;
+    margin: 20px;
+    letter-spacing: 0.15em;
+    text-align: end;
+}
+
+.discover-menswear-header h4 {
+    font-weight: 600;
+    font-size: 2.5em;
+    letter-spacing: 0.2em;
+}
 
 
+/* Menswear featured collection image section below */
 
 
-
-
-
-
+.featured-collection {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 37%;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.featured-collection-image img {
+    max-width: 100%;
+    z-index: 0;
+}
+.featured-collection-image {
+    position: relative;
+    text-align: center;
+}
+.featured-collection-image p {
+    position: relative;
+    bottom: 40%;
+    left: -40%;
+    transform: rotate(270deg);
+    z-index: 1;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    letter-spacing: 0.25em;
+}
 
 
 
 
 /* Media queries below */
+
+
+
+
+
+
 
 @media (max-width: 992px){
     .header-2-landscape {
@@ -153,7 +192,20 @@ body {
         background-attachment: local;
         height: 500px;
     }
+
+    .featured-collection {
+        width: 100vw;
+        grid-auto-columns: 37%;
+    }
+    .featured-collection-image p {
+        font-size: 2.5vw;
+    }
+    .featured-collection img {
+        border: 5px solid white;
+        max-width: 130%;
+    }
 }
+
 
 @media (max-width: 600px){
     .navbar-brand {
@@ -162,4 +214,13 @@ body {
     .hero-text {
         font-size: .6em;
     }
+    .discover-menswear-header h4 {
+        font-size: 6vw;
+    }
+    .discover-menswear-header {
+        margin-left: 15px;
+    }
+
 }
+
+/* ON HOVER media queries below */
