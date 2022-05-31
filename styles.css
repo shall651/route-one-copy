@@ -148,7 +148,7 @@ body {
     }
 
     .hero-image-cover {
-        background-image: url(/images/shorts-main-banner.jpg);
+        background-image: url(./images/shorts-main-banner.jpg);
         background-size: cover;
         background-attachment: local;
         height: 500px;
